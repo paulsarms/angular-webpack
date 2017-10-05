@@ -3,11 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
+
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
+import { ActiveClientsComponent } from './client_metrics/activeclients.component';
+import { MountsComponent } from './client_metrics/mounts.component';
+import { DiffComponent } from './client_metrics/diff.component';
+import { AlertsComponent } from './alerts/alerts.component';
+import { XwerxService } from './services/xwerx.service';
+
+
 import { ApiService } from './shared';
-import { routing } from './app.routing';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 
@@ -15,16 +20,18 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
   imports: [
     BrowserModule,
     HttpModule,
-    FormsModule,
-    routing
+    FormsModule
   ],
   declarations: [
     AppComponent,
-    HomeComponent,
-    AboutComponent
+    ActiveClientsComponent,
+    MountsComponent,
+    DiffComponent,
+    AlertsComponent
   ],
   providers: [
-    ApiService
+    ApiService,
+    XwerxService
   ],
   bootstrap: [AppComponent]
 })
