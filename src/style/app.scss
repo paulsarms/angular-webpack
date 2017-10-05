@@ -1,6 +1,15 @@
 // styles in src/style directory are applied to the whole page
+
+// color palette
+$color-background: #fff;
+$color-green: #5DB792;
+$color-light-green:#7DC5A7;
+$color-clients-blue: #69A3E5;
+$color-clients-grey: #596169;
+$color-clients-background: #4B545D;
+
 body {
-    background: #0147A7;
+    background: blue;
     color: #fff;
 }
 a {
