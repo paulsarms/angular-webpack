@@ -1,0 +1,27 @@
+{
+  "clients": {
+    "activeclients": "210",
+    "mounts": "[3,4,3,5,6,7,2,7,9,8,9,9]",
+    "diff": "104"
+  },
+  "alerts": [
+    {
+      "name": "john",
+      "message": "This is johns alert message",
+      "date": "Feb 01",
+      "importance": "very"
+    },
+    {
+      "name": "joe",
+      "message": "This is joes alert message",
+      "date": "Feb 01",
+      "importance": "low"
+    },
+    {
+      "name": "jane",
+      "message": "This is janes alert message",
+      "date": "Feb 01",
+      "importance": "middle"
+    }
+  ]
+}
