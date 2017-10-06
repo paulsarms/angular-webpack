@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { XwerxService } from './services/xwerx.service';
 
-import { ApiService } from './shared';
 
 import '../style/app.scss';
 
@@ -8,12 +8,10 @@ import '../style/app.scss';
   selector: 'my-app', // <my-app></my-app>
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  providers: [ XwerxService ]
 })
 export class AppComponent {
-  url = 'https://github.com/preboot/angular2-webpack';
-  title: string;
-
-  constructor(private api: ApiService) {
-    this.title = this.api.title;
-  }
+  title: string = 'Xwerx Test';
+  data: any = [];
+  errorMessage: string;
 }

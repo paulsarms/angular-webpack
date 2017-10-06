@@ -1,17 +1,22 @@
-<header>
-  <nav>
-    <a [routerLink]="['']">Home</a>
-    <a [routerLink]="['about']">About</a>
-  </nav>
-</header>
-<main>
-  <h1>Hello from {{title}}!</h1>
+<div class="container">
+  <div id="clients" class="panel panel-default">
+    <div class="panel-body">
+      <h2>Clients</h2>
+      <div class="col-md-4 metric">
+        <active-clients-component>loading component...</active-clients-component>
+      </div>
+      <div class="col-md-4 metric">
+        <mounts-component>loading component...</mounts-component>
+      </div>
+      <div class="col-md-4 metric">
+        <diff-component>loading component...</diff-component>
+      </div>
+    </div>
+  </div>
 
-  <!-- Images (and assets) are parsed and loaded from within the public directory -->
-  <img src="/img/angular.png">
-
-  <router-outlet></router-outlet>
-</main>
-<footer>
-  <a [href]="url">Webpack Angular 2 Starter</a>
-</footer>
+  <div id="alerts" class="panel panel-default">
+    <div class="panel-body">
+      <alerts-component></alerts-component>
+    </div>
+  </div>
+</div>
