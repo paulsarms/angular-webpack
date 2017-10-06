@@ -9,9 +9,18 @@ $color-clients-grey: #596169;
 $color-clients-background: #4B545D;
 
 body {
-    background: blue;
     color: #fff;
 }
-a {
-    color: #03A9F4;
+a, a:hover {
+  color: #fff;
+}
+.metric, .metric h3 {
+  text-align: center;
+}
+#clients{
+  background: $color-clients-background;
+}
+
+#alerts {
+  background: $color-light-green;
 }
