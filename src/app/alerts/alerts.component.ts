@@ -3,18 +3,18 @@ import { XwerxService } from '../services/xwerx.service';
 
 @Component({
   selector: 'alerts-component',
-  templateUrl: './alerts.component.html'
+  templateUrl: './alerts.component.html',
+  styleUrls: ['./alerts.component.scss']
 })
 
 export class AlertsComponent {
-  data:any =[];
+  title: string = "Alerts";
+  data:any;
   errorMessage: string;
   constructor(private _xwerxService: XwerxService) { }
 
     ngOnInit(): void {
       this.getData();
-      console.log("FUUUUUCCCCCKK");
-      console.log(this.data[0].name);
     }
 
     getData(): void {
@@ -22,4 +22,5 @@ export class AlertsComponent {
         resData => this.data = resData,
         error => this.errorMessage = <any>error);
     }
+
 }
