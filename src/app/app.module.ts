@@ -11,9 +11,6 @@ import { DiffComponent } from './client_metrics/diff.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { XwerxService } from './services/xwerx.service';
 
-
-import { ApiService } from './shared';
-
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 
 @NgModule({
@@ -30,7 +27,6 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     AlertsComponent
   ],
   providers: [
-    ApiService,
     XwerxService
   ],
   bootstrap: [AppComponent]
