@@ -11,8 +11,8 @@
 </div>
 
 <div class="row" *ngFor="let datum of data">
-   <div class="col-md-3"><span class="glyphicon glyphicon-user"></span>    {{ datum.name }}</div>
-   <div class="col-md-3">{{ datum.message }}</div>
-   <div class="col-md-3">{{ datum.date }}</div>
-   <div class="col-md-3">{{ datum.importance }}</div>
+   <div class="col-md-3 name"><span class="glyphicon glyphicon-user"></span> {{ datum.name }}</div>
+   <div class="col-md-5 message">{{ datum.message }}</div>
+   <div class="col-md-2 date">{{ datum.date }}</div>
+   <div class="col-md-2"><importance-component [importance]='datum.importance'></importance-component></div>
 </div>

@@ -10,6 +10,7 @@ import { MountsComponent } from './client_metrics/mounts.component';
 import { DiffComponent } from './client_metrics/diff.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { XwerxService } from './services/xwerx.service';
+import { ImportanceComponent } from './shared/importance.component';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 
@@ -24,7 +25,8 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     ActiveClientsComponent,
     MountsComponent,
     DiffComponent,
-    AlertsComponent
+    AlertsComponent,
+    ImportanceComponent
   ],
   providers: [
     XwerxService
