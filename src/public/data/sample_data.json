@@ -9,19 +9,19 @@
         "name": "john",
         "message": "This is johns alert message",
         "date": "Feb 01",
-        "importance": "very"
+        "importance": 1
       },
       {
         "name": "joe",
         "message": "This is joes alert message",
         "date": "Feb 01",
-        "importance": "low"
+        "importance": 3
       },
       {
         "name": "jane",
         "message": "This is janes alert message",
         "date": "Feb 01",
-        "importance": "middle"
+        "importance": 2
       }
     ]
 }
