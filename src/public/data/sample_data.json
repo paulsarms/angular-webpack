@@ -1,7 +1,7 @@
 {
   "clients": {
-    "activeclients": 210,
-    "mounts": [3,4,3,5,6,7,2,7,9,8,9,9],
+    "activeclients": 207,
+    "mounts": [2,4,3,5,6,7,2,7,9,8,9,9],
     "diff": 104
   },
   "alerts": [
