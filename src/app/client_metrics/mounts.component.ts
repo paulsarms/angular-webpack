@@ -8,13 +8,13 @@ import { XwerxService } from '../services/xwerx.service';
 })
 
 export class MountsComponent implements OnInit  {
-  title:string = "Last 12 Mounts";
-  blue: string = "#69A3E5";
-  grey: string = "#596169";
+  title = 'Last 12 Mounts';
+  blue = '#69A3E5';
+  grey = '#596169';
   data: any;
   canvas: any;
   errorMessage: string;
-  @ViewChild('mountscanvas') canvasRef:ElementRef;
+  @ViewChild('mountscanvas') canvasRef: ElementRef;
 
 
   constructor(private _xwerxService: XwerxService) { }
@@ -36,25 +36,27 @@ export class MountsComponent implements OnInit  {
       const ctx = this.canvas.getContext('2d');
       let W = this.canvas.width;
       let H = this.canvas.height;
-      let barwidth = W/24;
-      let barspace = W/12;
-      let color = this.blue
+      let barwidth = W / 24;
+      let barspace = W / 12;
+      let color = this.blue;
       let bgcolor = this.grey;
       // Clear the canvas everytime a chart is drawn:
       ctx.clearRect(0, 0, barwidth, H);
 
-
-      for(let i=0;i<22;i++){
-        let x = i*barspace;
+      // generate bar bacgkrounds
+      for (let i = 0; i < 22; i++) {
+        let x = i * barspace;
         ctx.fillStyle = bgcolor;
-        ctx.fillRect(x,0,barwidth,H);
+        ctx.fillRect(x, 0, barwidth, H);
       }
+
+      // color the bars to the approproate size from the data
       let mounts = data.clients.mounts;
-      for (let i in mounts) {
-        let x = parseInt(i)*barspace;
+      for (let i = 0; i < mounts.length; i++) {
+        let x = i * barspace;
         let y = H * mounts[i] * 0.1;
         ctx.fillStyle = color;
-        ctx.fillRect(x,H-y,barwidth,y);
+        ctx.fillRect(x, H - y, barwidth, y);
       }
     }
   }

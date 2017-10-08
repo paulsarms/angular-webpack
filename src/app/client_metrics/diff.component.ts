@@ -8,13 +8,13 @@ import { XwerxService } from '../services/xwerx.service';
 })
 
 export class DiffComponent {
-  title:string = "Increase";
-  blue: string = "#69A3E5";
-  grey: string = "#596169";
+  title = 'Increase';
+  blue = '#69A3E5';
+  grey = '#596169';
   data: any;
   canvas: any;
   errorMessage: string;
-  @ViewChild('diffcanvas') canvasRef:ElementRef;
+  @ViewChild('diffcanvas') canvasRef: ElementRef;
 
 
   constructor(private _xwerxService: XwerxService) { }
@@ -36,7 +36,7 @@ export class DiffComponent {
     const ctx = this.canvas.getContext('2d');
     let W = this.canvas.width;
     let H = this.canvas.height;
-    let color = this.blue
+    let color = this.blue;
     ctx.fillStyle = color;
     ctx.font = '50px bebas';
     ctx.textBaseline = 'alphabetic';

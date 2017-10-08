@@ -8,16 +8,15 @@ import { XwerxService } from '../services/xwerx.service';
 })
 
 export class ActiveClientsComponent implements OnInit {
-  title: string = "Active Clients";
-  blue: string = "#69A3E5";
-  grey: string = "#596169";
+  title = 'Active Clients';
+  blue = '#69A3E5';
+  grey = '#596169';
   canvas: any;
   data: any = [];
   errorMessage: string;
   activeClients: number;
-  test: string = "test string";
 
-  @ViewChild('activeclients') canvasRef:ElementRef;
+  @ViewChild('activeclients') canvasRef: ElementRef;
 
 
   constructor(private _xwerxService: XwerxService) { }
@@ -44,24 +43,29 @@ export class ActiveClientsComponent implements OnInit {
       let bgcolor = this.grey;
       // Clear the canvas everytime a chart is drawn
       ctx.clearRect(0, 0, W, H);
+
+      // background arc
       ctx.beginPath();
       ctx.strokeStyle = bgcolor;
       ctx.lineWidth = 30;
-      // background arc
-      ctx.arc(W/2, H, W/3, Math.PI, 0, false);
-      ctx.stroke();
+      ctx.arc(W / 2, H, W / 3, Math.PI, 0, false);
+      ctx.stroke(); // draw arc
 
+      // guage arc. Let's say it goes up to a max 300 active clients
       ctx.beginPath();
       ctx.strokeStyle = color;
       ctx.lineWidth = 30;
-      // guage arc
-      ctx.arc(W/2, H, W/3, Math.PI, -1, false);
-      ctx.stroke();
+      // do the math to calculate how big the arc should be from the json data
+      let maxClients = 300;
+      let arclength = Math.PI - (Math.PI * (data.clients.activeclients/maxClients));
+      ctx.arc(W / 2, H, W / 3, Math.PI, -1 * arclength, false);
+      ctx.stroke(); // draw arc
 
+      // guage text
       ctx.fillStyle = color;
       ctx.font = '50px bebas';
       ctx.textBaseline = 'alphabetic';
       ctx.textAlign = 'center';
-      ctx.fillText(data.clients.activeclients, W/2, H);
+      ctx.fillText(data.clients.activeclients, W / 2, H); // draw text
     }
 }
