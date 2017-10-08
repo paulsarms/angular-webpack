@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class XwerxService {
-  private _dataUrl: string = "https://raw.githubusercontent.com/paulsarms/angular-webpack/master/src/data/sample_data.json";
+  private _dataUrl = './data/sample_data.json';
 
   constructor (private _http: Http) {  }
 
