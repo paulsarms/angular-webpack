@@ -11,7 +11,5 @@ import '../style/app.scss';
   providers: [ XwerxService ]
 })
 export class AppComponent {
-  title: string = 'Xwerx Test';
-  data: any = [];
-  errorMessage: string;
+  title = 'Xwerx Test';
 }
