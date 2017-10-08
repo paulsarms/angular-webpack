@@ -8,8 +8,8 @@ import { XwerxService } from '../services/xwerx.service';
 })
 
 export class AlertsComponent {
-  title: string = "Alerts";
-  data:any;
+  title = 'Alerts';
+  data: any;
   errorMessage: string;
   constructor(private _xwerxService: XwerxService) { }
 
@@ -19,7 +19,7 @@ export class AlertsComponent {
 
     getData(): void {
       this._xwerxService.getData().subscribe(
-        resData => this.data = resData,
+        resData => this.data = resData.alerts,
         error => this.errorMessage = <any>error);
     }
 
