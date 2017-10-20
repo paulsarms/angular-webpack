@@ -1,0 +1,93 @@
+{
+	"batchcomplete": "",
+	"continue": {
+		"sroffset": 10,
+		"continue": "-||"
+	},
+	"query": {
+		"searchinfo": {
+			"totalhits": 57007
+		},
+		"search": [{
+			"ns": 0,
+			"title": "Dublin",
+			"pageid": 8504,
+			"size": 108394,
+			"wordcount": 10425,
+			"snippet": "<span class=\"searchmatch\">Dublin</span> (/\u02c8d\u028cbl\u026an/, Irish: Baile \u00c1tha Cliath [bl\u02b2a\u02d0\u02c8kl\u02b2i\u0259h]) is the capital and largest city of Ireland. <span class=\"searchmatch\">Dublin</span> is in the province of Leinster on Ireland's",
+			"timestamp": "2017-10-20T12:27:06Z"
+		}, {
+			"ns": 0,
+			"title": "List of Dublin postal districts",
+			"pageid": 961703,
+			"size": 14661,
+			"wordcount": 1356,
+			"snippet": "<span class=\"searchmatch\">Dublin</span> postal districts have been used by Ireland's postal service, known as An Post, to sort mail in <span class=\"searchmatch\">Dublin</span>. The system is similar to that used in cities",
+			"timestamp": "2017-10-10T15:24:49Z"
+		}, {
+			"ns": 0,
+			"title": "Dublin Core",
+			"pageid": 8742,
+			"size": 17411,
+			"wordcount": 1929,
+			"snippet": "The <span class=\"searchmatch\">Dublin</span> Core Schema is a small set of vocabulary terms that can be used to describe web resources (video, images, web pages, etc.), as well as physical",
+			"timestamp": "2017-10-02T11:31:38Z"
+		}, {
+			"ns": 0,
+			"title": "Dublin Regulation",
+			"pageid": 1529390,
+			"size": 20067,
+			"wordcount": 2142,
+			"snippet": "The <span class=\"searchmatch\">Dublin</span> Regulation (Regulation No. 604/2013; sometimes the <span class=\"searchmatch\">Dublin</span> III Regulation; previously the <span class=\"searchmatch\">Dublin</span> II Regulation and <span class=\"searchmatch\">Dublin</span> Convention) is a European",
+			"timestamp": "2017-09-26T00:25:27Z"
+		}, {
+			"ns": 0,
+			"title": "Nephrops norvegicus",
+			"pageid": 1489133,
+			"size": 23947,
+			"wordcount": 2451,
+			"snippet": "Nephrops norvegicus, known variously as the Norway lobster, <span class=\"searchmatch\">Dublin</span> Bay prawn, langoustine (compare langostino) or scampi, is a slim, orange-pink lobster",
+			"timestamp": "2017-09-17T06:19:41Z"
+		}, {
+			"ns": 0,
+			"title": "Rail transport in Ireland",
+			"pageid": 609867,
+			"size": 48227,
+			"wordcount": 4902,
+			"snippet": "radiate from <span class=\"searchmatch\">Dublin</span>. Northern Ireland has suburban routes from Belfast and two main InterCity lines, to Derry and cross-border to <span class=\"searchmatch\">Dublin</span>. The accompanying",
+			"timestamp": "2017-10-04T09:55:52Z"
+		}, {
+			"ns": 0,
+			"title": "Skerries, Dublin",
+			"pageid": 1037486,
+			"size": 17255,
+			"wordcount": 2013,
+			"snippet": "parish in the Fingal North deanery of the Roman Catholic Archdiocese of <span class=\"searchmatch\">Dublin</span>.   Skerries has five islands off its coast called Shenick Island, St Patrick's",
+			"timestamp": "2017-10-16T17:26:39Z"
+		}, {
+			"ns": 0,
+			"title": "Dublin Metro",
+			"pageid": 4565138,
+			"size": 27281,
+			"wordcount": 3570,
+			"snippet": "The <span class=\"searchmatch\">Dublin</span> Metro (Irish: Meitreo \u00c1tha Cliath) is a proposed metro system for the city of <span class=\"searchmatch\">Dublin</span>. It was first proposed in the then Irish Government's",
+			"timestamp": "2017-10-03T20:12:52Z"
+		}, {
+			"ns": 0,
+			"title": "Hiberno-English",
+			"pageid": 14144,
+			"size": 83731,
+			"wordcount": 7617,
+			"snippet": "century. Initially, it was mainly spoken in an area known as the Pale around <span class=\"searchmatch\">Dublin</span>, with mostly Irish spoken throughout the rest of the country. By the Tudor",
+			"timestamp": "2017-10-11T22:17:44Z"
+		}, {
+			"ns": 0,
+			"title": "Dublin Airport",
+			"pageid": 293794,
+			"size": 74172,
+			"wordcount": 5366,
+			"snippet": "<span class=\"searchmatch\">Dublin</span> Airport, (Irish: Aerfort Bhaile \u00c1tha Cliath) (IATA: DUB,\u00a0ICAO: EIDW), is an international airport serving <span class=\"searchmatch\">Dublin</span>, the capital city of Ireland.",
+			"timestamp": "2017-10-16T00:58:57Z"
+		}]
+	}
+}
